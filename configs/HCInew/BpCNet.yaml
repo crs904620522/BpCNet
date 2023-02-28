@@ -1,0 +1,42 @@
+method: BpCNet
+GPU_ID: '3'
+RefineNet:
+  input_dim: 1
+  times: 8
+  scope: 1.0
+data:
+  dataset: 'HCInew'
+  warp_method: True   # set this to False for Bilinear Warp
+  coarse_dir: './data/CoarseData/OACCNet'
+  path: './data/HCInew'
+  views: 9 
+  img_size: [512,512]
+  iteration: 1
+training:
+  out_dir: './out/BpCNet/HCInew'
+  loss: 'MAEL1'
+  batch_size: 4
+  image_batch_size: 4
+  input_size: 32
+  imageMxM_size: 32
+  augmentation: True 
+  transform: False     
+  model_selection_metric: 'minimize'
+  val_metric: 'bp7'
+  print_every: 5
+  checkpoint_every: 1000
+  validate_every: 1000
+  visualize_every: 1000
+  backup_every: 1000
+test:
+  test_dir: './out/BpCNet/HCInew/test_dir'
+  batch_size: 1
+  image_batch_size: 1
+  input_size: 512
+  transform: False
+vis:
+  vis_dir: './out/BpCNet/HCInew/val_dir'
+  batch_size: 1
+  image_batch_size: 1
+  input_size: 512
+  transform: False

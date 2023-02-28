@@ -1,0 +1,12 @@
+inherit_from: configs/HCInew/BpCNet.yaml
+GPU_ID: '3'
+RefineNet:
+  scope: 1.0
+data:
+  coarse_dir: './data/CoarseData/OACCNet'
+  iteration: 1
+generation:
+  generation_dir: './out/BpCNet/HCInew/generation/OACCNet'
+  model_file: 'model_best.pt'
+  input_size: 512
+  name: ['backgammon', 'dots', 'pyramids', 'stripes', 'dino','boxes', 'sideboard', 'cotton', 'bedroom', 'bicycle','herbs', 'origami', ]
