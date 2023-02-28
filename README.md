@@ -28,6 +28,7 @@ Here, we train BpCNet on [OACC-Net](https://github.com/YingqianWang/OACC-Net) an
 ##### Dataset: 
 
 Light Field Dataset: We use [HCI 4D Light Field Dataset](https://lightfield-analysis.uni-konstanz.de/) for training and test. Please first download light field datasets, and put them into corresponding folders in ***data/HCInew***.
+
 Initial disparity map: We perform BpCNet on other LF disparity methods for refinement, you can provide initial data and put them into ***data/CoarseData*** or use the demo we provided.
 
 ##### To train, run:
