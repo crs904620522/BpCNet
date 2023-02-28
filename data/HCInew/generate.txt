@@ -1,0 +1,12 @@
+stratified/backgammon
+stratified/dots
+stratified/pyramids
+stratified/stripes
+training/dino
+training/boxes
+training/sideboard
+training/cotton
+test/bedroom
+test/bicycle
+test/herbs
+test/origami

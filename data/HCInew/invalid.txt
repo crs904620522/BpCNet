@@ -1,0 +1,3 @@
+additional_invalid_area/kitchen/input_Cam040_invalid_ver2.png
+additional_invalid_area/museum/input_Cam040_invalid_ver2.png
+additional_invalid_area/vinyl/input_Cam040_invalid_ver2.png
